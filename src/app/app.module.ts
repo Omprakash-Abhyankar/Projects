@@ -7,12 +7,14 @@ import { LoginComponent } from './User/login/login.component';
 import { RegisterComponent } from './User/register/register.component';
 import { RouterModule } from '@angular/router';
 import { ReactiveFormsModule } from '@angular/forms';
+import { UrlshorntnerhomeComponent } from './UrlShortner/urlshorntnerhome/urlshorntnerhome.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    UrlshorntnerhomeComponent
   ],
   imports: [
     BrowserModule,
