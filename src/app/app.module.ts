@@ -6,7 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './User/login/login.component';
 import { RegisterComponent } from './User/register/register.component';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { UrlshorntnerhomeComponent } from './UrlShortner/urlshorntnerhome/urlshorntnerhome.component';
 
 @NgModule({
@@ -19,7 +19,8 @@ import { UrlshorntnerhomeComponent } from './UrlShortner/urlshorntnerhome/urlsho
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule
     // RouterModule.forRoot([
     //   {path:'',component:LoginComponent, pathMatch:'full'},
     //   {path:'login',component:LoginComponent},

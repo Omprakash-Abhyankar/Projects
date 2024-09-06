@@ -1,7 +1,7 @@
 import { Component, NgZone, OnInit } from '@angular/core';
 import { FormBuilder,FormGroup,Validator, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
-import google, { CredentialResponse,PromptMomentNotification } from 'google-one-tap';
+import google, { CredentialResponse, PromptMomentNotification } from 'google-one-tap';
 import { AuthService } from '../../Services/auth.service';
 
 @Component({
@@ -20,8 +20,8 @@ export class LoginComponent implements OnInit{
     private route:Router
     
   ) {
-    
-    
+
+
   }
   ngOnInit(): void {
     this.form = this.fb.group({      
@@ -47,8 +47,6 @@ export class LoginComponent implements OnInit{
 let formData = {  
   username : this.form.value.username,
   password: this.form.value.password,
-
-
 }
     this.loading = true;
     
@@ -79,12 +77,6 @@ let formData = {
        }
     }
     
-    // Handle form submission, e.g., send to server
-    // Simulate async operation
-    // setTimeout(() => {
-    //   localStorage.setItem('formData', JSON.stringify(formData))
-    //   this.loading = false;
-    //   alert('Form submitted successfully!');
-    // }, 1000);
+  
 
 

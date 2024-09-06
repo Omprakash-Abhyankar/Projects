@@ -1,1 +1,24 @@
-<p>urlshorntnerhome works!</p>
+<section class="container">
+<form #urlForm="ngForm" (ngSubmit)="onSubmitUrlForm(urlForm)" autocomplete="off">
+    <input type="url" name="inputurl" class="form-input" placeholder="Paste Your Url Here." required>
+    <div class="form-error">
+        <p>Please Enter Url</p>
+    </div>
+    <button type="submit" [disabled]="urlForm.invalid" class="form-btn">Generate Url</button>
+</form>
+
+<div class="short-url-div">
+    <h2>Generate Url Link</h2>
+<div>
+<p>
+    <a href="" target="_blank" title="Click Me">Short Url</a>
+</p>
+</div>
+<div class="short-url-btn-div">
+    <button>Copy</button>
+    <button>Reset</button>
+</div>
+
+</div>
+
+</section>

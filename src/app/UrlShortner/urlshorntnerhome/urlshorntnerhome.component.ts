@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './urlshorntnerhome.component.css'
 })
 export class UrlshorntnerhomeComponent {
-
+  onSubmitUrlForm(urlForm:any){
+    
+  }
 }
